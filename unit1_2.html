@@ -1196,22 +1196,23 @@ Juan D. Montoro-Pons | Academic year 2024-25
 </div>
 <div class="callout-content">
 <p><span class="math inline">\(P_{X,Y} (x, y) = P (X = x, Y = y)\)</span><br>
-i.e., the probability that <span class="math inline">\(X = x\)</span> and <span class="math inline">\(Y = y\)</span>.</p>
+i.e., the probability that <span class="math inline">\(X = x \quad\)</span> <strong>AND</strong> <span class="math inline">\(\quad Y = y\)</span>.</p>
 </div>
 </div>
 </div>
 </div>
-<div title="Marginal Distribution of $X$">
+<div title="Marginal Distributions">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Marginal Distribution of <span class="math inline">\(X\)</span></strong></p>
+<p><strong>Marginal Distributions</strong></p>
 </div>
 <div class="callout-content">
 <p><span class="math inline">\(P_X(X=x)\)</span> <span class="math inline">\(\to\)</span> distribution of <span class="math inline">\(X\)</span> regardless of the value of <span class="math inline">\(Y\)</span>.</p>
+<p><span class="math inline">\(P_Y(Y=y)\)</span> <span class="math inline">\(\to\)</span> distribution of <span class="math inline">\(Y\)</span> regardless of the value of <span class="math inline">\(X\)</span>.</p>
 </div>
 </div>
 </div>
@@ -1232,22 +1233,23 @@ i.e., the probability that <span class="math inline">\(X = x\)</span> and <span 
 </div>
 <div class="callout-content">
 <p><span class="math inline">\(F_{X,Y} (x, y) = P (X \leq x, Y \leq y)\)</span><br>
-i.e., the probability that <span class="math inline">\(X \leq x, Y \leq y\)</span>.</p>
+i.e., the probability that <span class="math inline">\(X \leq x \quad\)</span> <strong>AND</strong> <span class="math inline">\(\quad Y \leq y\)</span>.</p>
 </div>
 </div>
 </div>
 </div>
-<div title="Marginal Distribution of $X$">
+<div title="Marginal Distributions">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Marginal Distribution of <span class="math inline">\(X\)</span></strong></p>
+<p><strong>Marginal Distributions</strong></p>
 </div>
 <div class="callout-content">
-<p><span class="math inline">\(F_X(x)=P_X(X\leq x)\)</span>, is the cumulative distribution of <span class="math inline">\(X\)</span> regardless of <span class="math inline">\(Y\)</span>.</p>
+<p><span class="math inline">\(F_X(x)=P_X(X\leq x)\)</span>, is the cumulative distribution of <span class="math inline">\(X\)</span> (regardless of <span class="math inline">\(Y\)</span>).</p>
+<p><span class="math inline">\(F_Y(y)=P_Y(Y\leq y)\)</span>, is the cumulative distribution of <span class="math inline">\(Y\)</span> (regardless of <span class="math inline">\(X\)</span>).</p>
 </div>
 </div>
 </div>
@@ -1263,7 +1265,6 @@ i.e., the probability that <span class="math inline">\(X \leq x, Y \leq y\)</spa
 <section id="independence" class="slide level2" style="color:#598686">
 <h2>Independence</h2>
 <p><span class="math inline">\((X,Y)\)</span> are <strong>independent</strong> if the joint distribution is the product of the marginal distributions.</p>
-<p> </p>
 <div title="Discrete Case">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
@@ -1295,10 +1296,13 @@ i.e., the probability that <span class="math inline">\(X \leq x, Y \leq y\)</spa
 </div>
 </div>
 </section>
-<section id="independence-multivariate-example" class="slide level2" data-background-color="#598686">
+<section id="independence-multivariate-example" class="slide level2 scrollable" data-background-color="#598686">
 <h2>Independence: multivariate example</h2>
-<p> </p>
-<p><strong>Q.</strong> Let <span class="math inline">\(X_1, X_2\ldots X_n\)</span> be <span class="math inline">\(n\)</span> independent random variables. Define the joint probability distribution function.</p>
+<p><strong>Q.</strong> Let <span class="math inline">\(X_1, X_2\ldots X_n\)</span> be <span class="math inline">\(n\)</span> independent random variables.</p>
+<ol type="1">
+<li>Define the joint probability distribution function in the general case</li>
+<li>Define the joint probability distribution assuming they are independent</li>
+</ol>
 </section></section>
 <section>
 <section id="section-2" class="title-slide slide level1 center" data-background-color="#598686">
@@ -1346,14 +1350,14 @@ i.e., the probability that <span class="math inline">\(X \leq x, Y \leq y\)</spa
 </section>
 <section id="notation-for-bivariate-distributions" class="slide level2" style="color:#598686">
 <h2>Notation for bivariate distributions</h2>
-<p> </p>
 <ul>
 <li>Let <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> be two random variables. A bivariate distribution gives the probability that each variable falls in any particular range or discrete set of values.</li>
 <li>Let their means, variances, and covariance be <span class="math inline">\(\mu_X\)</span> and <span class="math inline">\(\mu_Y\)</span>; <span class="math inline">\(\sigma^2_X\)</span> and <span class="math inline">\(\sigma^2_Y\)</span>; and <span class="math inline">\(\sigma_{XY}\)</span>, respectively. We use the notation:</li>
 </ul>
 <p><span class="math display">\[
 (X,Y) \sim \left( \vec{\mu}, \Sigma \right)
-\]</span> <span class="math display">\[
+\]</span></p>
+<p><span class="math display">\[
 \vec{\mu} = \left( \begin{array}{c}
 \mu_X \\
 \mu_Y
@@ -1366,7 +1370,6 @@ i.e., the probability that <span class="math inline">\(X \leq x, Y \leq y\)</spa
 </section>
 <section id="linear-transformations-of-two-random-variables" class="slide level2 scrollable" style="color:#598686">
 <h2>Linear transformations of two random variables</h2>
-<p> </p>
 <ol type="1">
 <li>Let <span class="math inline">\((X,Y) \sim \left( \vec{\mu}, \Sigma \right)\)</span>.</li>
 <li>Define <span class="math inline">\(W = a + bX + cY\)</span>.</li>
@@ -1380,7 +1383,6 @@ i.e., the probability that <span class="math inline">\(X \leq x, Y \leq y\)</spa
 </section>
 <section id="example" class="slide level2" data-background-color="#598686">
 <h2>Example</h2>
-<p> </p>
 <p>Let <span class="math inline">\(W = a + bX + cY\)</span></p>
 <p><strong>Q.</strong> Find the variance of <span class="math inline">\(W\)</span> assuming <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are independent.</p>
 </section>
@@ -1417,7 +1419,7 @@ W = X_1 + X_2 + \ldots + X_n
 <p><span class="math display">\[
 W = X_1 + X_2 + \ldots + X_n
 \]</span></p>
-<p><strong><span class="math inline">\(W\)</span> is also a normal random variable, i.e.,</strong></p>
+<p><span class="math inline">\(W\)</span> is also a normal random variable, i.e.,</p>
 <p><span class="math display">\[
 W \sim N(\mu_W, \sigma^2_W)
 \]</span></p>
@@ -2462,7 +2464,7 @@ window.QuartoSupport = function () {
         autoPlayMedia: null,
 
         // Global override for preloading lazy-loaded iframes (null/true/false)
-        preloadIframes: null,
+        preloadIframes: true,
 
         // Number of milliseconds between automatically proceeding to the
         // next slide, disabled when set to 0, this value can be overwritten
