@@ -9,7 +9,7 @@
 <link href="unit2_2_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="unit2_2_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.45">
+<meta name="generator" content="quarto-1.5.54">
 <title>unit2_2</title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -610,7 +610,7 @@
   };
 
   // Store cell data
-  globalThis.qwebrCellDetails = [{"code":"# Find the probability that a normal distribution with mean\n# 0.4 and variance (0.4 *(1-0.4))/200  is between 0.4 and 0.45\npnorm(0.45,mean = 0.4,sd = sqrt(0.4*0.6/200)) - pnorm(0.4,mean = 0.4,sd = sqrt(0.4*0.6/200))","id":1,"options":{"dpi":72,"editor-font-scale":"0.5","message":"true","fig-width":7,"fig-height":5,"classes":"","warning":"true","editor-max-height":"","label":"unnamed-chunk-1","editor-word-wrap":"true","autorun":"false","fig-cap":"","out-width":"700px","output":"true","out-height":"","context":"interactive","comment":"","read-only":"false","editor-quick-suggestions":"false","results":"markup"}},{"code":"# Find the probability that a normal distribution with mean\n# 36*8 and variance 36*9 is less than 293\npnorm(293,mean =36*8,sd = sqrt(36*9)) \n\n#","id":2,"options":{"dpi":72,"editor-font-scale":"0.5","message":"true","fig-width":7,"fig-height":5,"classes":"","warning":"true","editor-max-height":"","label":"unnamed-chunk-2","editor-word-wrap":"true","autorun":"false","fig-cap":"","out-width":"700px","output":"true","out-height":"","context":"interactive","comment":"","read-only":"false","editor-quick-suggestions":"false","results":"markup"}},{"code":"# Find the probability that a normal distribution with mean\n# 200*0.4 and variance 200*(0.4 *(1-0.4))  is greater than 100\n1-pnorm(100,mean = 200*0.4,sd = sqrt(200*0.4*0.6)) \n\n# Alternatively we can use the optional argument lower.tail = FALSE\npnorm(100,mean = 200*0.4,sd = sqrt(200*0.4*0.6),lower.tail = FALSE) \n","id":3,"options":{"dpi":72,"editor-font-scale":"0.5","message":"true","fig-width":7,"fig-height":5,"classes":"","warning":"true","editor-max-height":"","label":"unnamed-chunk-3","editor-word-wrap":"true","autorun":"false","fig-cap":"","out-width":"700px","output":"true","out-height":"","context":"interactive","comment":"","read-only":"false","editor-quick-suggestions":"false","results":"markup"}}];
+  globalThis.qwebrCellDetails = [{"code":"# Find the probability that a normal distribution with mean\n# 0.4 and variance (0.4 *(1-0.4))/200  is between 0.4 and 0.45\npnorm(0.45,mean = 0.4,sd = sqrt(0.4*0.6/200)) - pnorm(0.4,mean = 0.4,sd = sqrt(0.4*0.6/200))","id":1,"options":{"message":"true","dpi":72,"autorun":"false","comment":"","context":"interactive","editor-word-wrap":"true","fig-height":5,"editor-quick-suggestions":"false","results":"markup","editor-max-height":"","out-height":"","read-only":"false","fig-width":7,"out-width":"700px","warning":"true","classes":"","fig-cap":"","label":"unnamed-chunk-1","editor-font-scale":"0.5","output":"true"}},{"code":"# Find the probability that a normal distribution with mean\n# 36*8 and variance 36*9 is less than 293\npnorm(293,mean =36*8,sd = sqrt(36*9)) \n\n#","id":2,"options":{"message":"true","dpi":72,"autorun":"false","comment":"","context":"interactive","editor-word-wrap":"true","fig-height":5,"editor-quick-suggestions":"false","results":"markup","editor-max-height":"","out-height":"","read-only":"false","fig-width":7,"out-width":"700px","warning":"true","classes":"","fig-cap":"","label":"unnamed-chunk-2","editor-font-scale":"0.5","output":"true"}},{"code":"# Find the probability that a normal distribution with mean\n# 200*0.4 and variance 200*(0.4 *(1-0.4))  is greater than 100\n1-pnorm(100,mean = 200*0.4,sd = sqrt(200*0.4*0.6)) \n\n# Alternatively we can use the optional argument lower.tail = FALSE\npnorm(100,mean = 200*0.4,sd = sqrt(200*0.4*0.6),lower.tail = FALSE) \n","id":3,"options":{"message":"true","dpi":72,"autorun":"false","comment":"","context":"interactive","editor-word-wrap":"true","fig-height":5,"editor-quick-suggestions":"false","results":"markup","editor-max-height":"","out-height":"","read-only":"false","fig-width":7,"out-width":"700px","warning":"true","classes":"","fig-cap":"","label":"unnamed-chunk-3","editor-font-scale":"0.5","output":"true"}}];
 
   </script><script type="module">
   // Declare startupMessageQWebR globally
@@ -2126,11 +2126,11 @@ Juan D. Montoro-Pons | Academic year 2024-25
 </section><section id="sampling-distribution-of-the-sample-proportion" class="slide level2" style="color:#598686"><h2>Sampling distribution of the sample proportion</h2>
 <p><span class="math display">\[ \hat{P} \sim N \left( P, \frac{P(1-P)}{n} \right) \]</span></p>
 
-<img data-src="pics/4_proportion.png" class="r-stretch"></section><section id="sampling-distribution-of-the-sample-proportion-1" class="slide level2" style="color:#598686"><h2>Sampling distribution of the sample proportion</h2>
+<img data-src="pics2/4_proportion.png" class="r-stretch"></section><section id="sampling-distribution-of-the-sample-proportion-1" class="slide level2" style="color:#598686"><h2>Sampling distribution of the sample proportion</h2>
 <p>The impact of the sample size on the standard error of the sample proportion:</p>
 <p><span class="math display">\[n_1 &lt; n_2 &lt; n_3\]</span></p>
 
-<img data-src="pics/5_se_size_prop.png" class="r-stretch"></section><section id="sampling-distribution-of-the-proportion-example" class="slide level2 scrollable" data-background-color="#598686"><h2>Sampling distribution of the proportion: example</h2>
+<img data-src="pics2/5_se_size_prop.png" class="r-stretch"></section><section id="sampling-distribution-of-the-proportion-example" class="slide level2 scrollable" data-background-color="#598686"><h2>Sampling distribution of the proportion: example</h2>
 <p>The true proportion of voters who support political party A is <span class="math inline">\(P = 0.4\)</span>. Take a sample of 200 voters:</p>
 <ol type="1">
 <li><p>Find the distribution of the sample proportion.</p></li>
