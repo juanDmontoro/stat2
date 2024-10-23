@@ -1,4 +1,4 @@
-income <- read.csv(file = "https://juandmontoro.github.io/stat2/data.csv")
+income <- read.csv(file = "https://juandmontoro.github.io/stat2/ci_in_r/data.csv")
 income <- income$x
 
 ci <- function(sampleData,confidenceLevel=0.95,populationSD){
