@@ -610,7 +610,7 @@
   };
 
   // Store cell data
-  globalThis.qwebrCellDetails = [{"options":{"editor-word-wrap":"true","label":"unnamed-chunk-1","dpi":72,"output":"true","out-height":"","fig-height":5,"comment":"","results":"markup","context":"interactive","editor-font-scale":"0.5","editor-max-height":"","fig-cap":"","fig-width":7,"editor-quick-suggestions":"false","read-only":"false","autorun":"false","out-width":"700px","classes":"","warning":"true","message":"true"},"code":"# We start by creating the contingency table (which we name contingency): \n#  First create two columns: never, once\n#  Then merge in a data.frame\nnever = c(1405,912)\nonce = c(1553,977)\ncontingency = data.frame(never,once)\ncontingency\n\n# Next we run the test (use option correct=FALSE)\nresult = chisq.test(contingency,correct = FALSE)\n\n# We can check the calculated expected calues\nresult$expected\n\n# And the outcome of the test \nresult","id":1}];
+  globalThis.qwebrCellDetails = [{"code":"# We start by creating the contingency table (which we name contingency): \n#  First create two columns: never, once\n#  Then merge in a data.frame\nnever = c(1405,912)\nonce = c(1553,977)\ncontingency = data.frame(never,once)\ncontingency\n\n# Next we run the test (use option correct=FALSE)\nresult = chisq.test(contingency,correct = FALSE)\n\n# We can check the calculated expected calues\nresult$expected\n\n# And the outcome of the test \nresult","options":{"message":"true","out-width":"700px","editor-max-height":"","read-only":"false","label":"unnamed-chunk-1","fig-height":5,"results":"markup","out-height":"","classes":"","fig-width":7,"dpi":72,"comment":"","fig-cap":"","autorun":"false","context":"interactive","warning":"true","output":"true","editor-font-scale":"0.5","editor-quick-suggestions":"false","editor-word-wrap":"true"},"id":1}];
 
   </script><script type="module">
   // Declare startupMessageQWebR globally
@@ -2100,10 +2100,12 @@ Juan D. Montoro-Pons | Academic year 2024-25
 <p>Homogeneity/independence tests</p>
 </div>
 </section><section id="homogeneity-tests" class="slide level2" style="color:#598686"><h2>Homogeneity tests</h2>
-<p>&nbsp;</p>
 <p><strong>Goal</strong>: Test the null hypothesis that two (or more) (sub)populations come from the same distribution.</p>
-<p>Examples: - The distribution of drinking habits is the same across two countries (e.g.&nbsp;Spain and Germany). - Online purchase intentions do not differ across gender.</p>
-<p><strong>Note</strong>:</p>
+<p>Examples:</p>
+<ul>
+<li>The distribution of drinking habits is the same across two countries (e.g.&nbsp;Spain and Germany).</li>
+<li>Online purchase intentions do not differ across gender.</li>
+</ul>
 <div title="Note">
 <div class="callout callout-note no-icon callout-titled callout-style-default">
 <div class="callout-body">
@@ -2117,7 +2119,6 @@ Juan D. Montoro-Pons | Academic year 2024-25
 </div>
 </div>
 </section><section id="independence-tests" class="slide level2" style="color:#598686"><h2>Independence tests</h2>
-<p>&nbsp;</p>
 <p><strong>Goal</strong>: Test the null hypothesis that two attributes are independent.</p>
 <p>Example: We work in the customer service department of an airline and would like to determine whether customer satisfaction and the type of fare purchased (business or economy) are independent.</p>
 <div title="Note">
